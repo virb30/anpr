@@ -51,3 +51,9 @@ git push heroku master
 # Demo 
 
 https://number-plate-extractor.herokuapp.com/
+
+
+# Next Steps
+
+Our goal is to continue to develop this project by adding some features in the future:
+ - [ ] Integrate with Google Vision AI (for testing purposes) 
