@@ -1,7 +1,8 @@
 # ANPR - Automatic Number Plate Recognition
 
-In this project we apply a series of image processing techniques to extract the 
-number plate of a car image. Considering:
+This project is an example of how we can extract the number 
+plate of a car image, by applying a series of image processing 
+techniques. Considering:
 * The image contains just 1 car
 * The plate pattern is Mercosul
 
@@ -56,4 +57,4 @@ https://number-plate-extractor.herokuapp.com/
 # Next Steps
 
 Our goal is to continue to develop this project by adding some features in the future:
- - [ ] Integrate with Google Vision AI (for testing purposes) 
+ - [ ] Integrate with Google Vision AI (for testing purposes)
