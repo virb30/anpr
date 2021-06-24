@@ -27,7 +27,7 @@ class Extractor:
             (x, y, w, h) = cv2.boundingRect(c)
             ratio = w / h
             # dimensões da placa: 40x13cm
-            if ratio >= 2.5 and ratio <= 4:
+            if 2.5 <= ratio <= 4:
                 identified_plate_area = image[y: y + h, x: x + w]
                 cropped_plate = cv2.threshold(identified_plate_area, 0, 255, cv2.THRESH_BINARY | cv2.THRESH_OTSU)[-1]
                 return cropped_plate

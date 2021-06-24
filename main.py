@@ -1,5 +1,8 @@
+import os
 import streamlit as st
+
 from core import Extractor
+from detector import detect_text
 from PIL import Image
 
 
@@ -27,6 +30,20 @@ def main():
                 st.image(extracted)
             else:
                 st.error('Não conseguimos extrair a placa')
+
+        # if st.button('Detectar texto'):
+        #     extractor = Extractor(image)
+        #     extracted = extractor()
+        #     try:
+        #         if extracted is None:
+        #             raise Exception("Não conseguimos extrair nenhuma placa")
+        #
+        #         st.text("Placa extraída da imagem:")
+        #         st.image(extracted)
+        #         text = detect_text(extracted)
+        #         st.success(f'Texto extraído: {text}')
+        #     except Exception as exc:
+        #         st.error(str(exc))
     else:
         st.text('Faça o upload de uma imagem')
 
